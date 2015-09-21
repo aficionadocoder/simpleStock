@@ -1,21 +1,17 @@
 Source Code structure-
 
-1)	Below is the source code structure
-
- 
-
-2)	Only necessary third party libraries are used-
+1)	Only necessary third party libraries are used-
 Mockito-core -1.9.5.jar    mocking framework for test cases
 Objenesis                            used in mockito
 Hamcrest                             for test cases
 Testing-6.9.6                       for test cases
 Commons-Lang3-3.4.jar   for Validations
 
-3)	 There are two types of test cases present in the source code for testing the functionality-
+2)	 There are two types of test cases present in the source code for testing the functionality-
 1) Unit test case
 2) Acceptance Test case (Only one EndToEndStockServiceAcceptanceTest)
 
-4)	SimpleStockAPI, TradeService, StockService are the client API’s.
+3)	SimpleStockAPI, TradeService, StockService are the client API’s.
 
 
 Assumptions-
