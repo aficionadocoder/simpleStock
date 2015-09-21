@@ -1,0 +1,35 @@
+Source Code structure-
+
+1)	Below is the source code structure
+
+ 
+
+2)	Only necessary third party libraries are used-
+Mockito-core -1.9.5.jar    mocking framework for test cases
+Objenesis                            used in mockito
+Hamcrest                             for test cases
+Testing-6.9.6                       for test cases
+Commons-Lang3-3.4.jar   for Validations
+
+3)	 There are two types of test cases present in the source code for testing the functionality-
+1) Unit test case
+2) Acceptance Test case (Only one EndToEndStockServiceAcceptanceTest)
+
+4)	SimpleStockAPI, TradeService, StockService are the client API’s.
+
+
+Assumptions-
+Technical-
+1)	Classes under service package are thread safe for single instance; dependency injection is implemented by using constructor/setters. Further we can use any DI framework like spring and all aforementioned classes can be provided as service (singleton)- we can also expose the services to client as REST based service or some other way.
+2)	Cache implementation is basic- but thread safety and basic functionality is implemented.
+Intent is to provide a basic utility for in-memory data storage. Cache implementation is open for further functionality like expiration mechanism, state saving in disk etc. We can also use third party lib like Guava cache.
+3)	Exception Handling and logging is taken care.
+
+Functional-
+Few information in the requirement document was open for discussion so assumptions are taken while doing the implementation. 
+1)	Stock Price calculation is based on trades recorded in last 15 mins; what if no trade received for a ticker in last 15 mins– we are throwing exception for now.
+2)	All prices/par values/dividends are in Double data type considering real world scenario.
+3)	For PERatio calculation- last dividend is used.
+4)	Every stock will not have last dividend and fixed dividend value.
+
+	
