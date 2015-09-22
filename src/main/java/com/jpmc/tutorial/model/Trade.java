@@ -2,13 +2,12 @@ package com.jpmc.tutorial.model;
 
 import org.apache.commons.lang3.Validate;
 
-import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by manish on 9/15/2015.
  */
-public class Trade implements Serializable{
+public class Trade{
     private String tickerSymbol;
     private Date tradeTime;
     private Integer quantity;
