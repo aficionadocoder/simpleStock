@@ -2,12 +2,11 @@ package com.jpmc.tutorial.model;
 
 import org.apache.commons.lang3.Validate;
 
-import java.io.Serializable;
 
 /**
  * Created by manish on 9/15/2015.
  */
-public class Stock implements Serializable {
+public class Stock {
     private String tickerSymbol;
     private StockType stockType;
     private Double lastDividend;
