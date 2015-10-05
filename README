@@ -19,7 +19,7 @@ Technical-
 1)	Classes under service package are thread safe for single instance; dependency injection is implemented by using constructor/setters. Further we can use any DI framework like spring and all aforementioned classes can be provided as service (singleton)- we can also expose the services to client as REST based service or some other way.
 2)	Cache implementation is basic- but thread safety and basic functionality is implemented.
 Intent is to provide a basic utility for in-memory data storage. Cache implementation is open for further functionality like expiration mechanism, state saving in disk etc. We can also use third party lib like Guava cache.
-3)	Exception Handling and logging is taken care.
+3)	Exception Handling and logging are taken care.
 
 Functional-
 Few information in the requirement document was open for discussion so assumptions are taken while doing the implementation. 
